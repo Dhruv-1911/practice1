@@ -1,6 +1,7 @@
 <html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +28,12 @@
 </head>
 
 <body>
-  <div class="imag ">
+  <div class="imag">
     <div class="top">
       <header>
-        <nav class="navbar d-flex flex-nowrap">
+        <div>
+         
+        <nav class="navbar">
           <div class="logo">
             <img src="netflix_logo.png" alt="Logo" style="width:200px;">
           </div>
@@ -38,7 +41,7 @@
             <a class="navbar-brand ml-4"> </a>
           </div>
           <div class="d-flex align-items-center">
-            <div class="dropdown mr-5">
+            <div >
               <button class="btn btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown"> <i
                   class="fas fa-globe mr-1"></i>
                 English
@@ -49,14 +52,15 @@
               </div>
             </div>
 
-            <button type="button" class="btn btn-danger text-nowrap">&nbsp; Sign in &nbsp;</button>
+            <button type="button" class="btn btn-danger text-nowrap">&nbsp; Sign in &nbsp;</button> 
           </div>
+        </div>
           <!-- </form> -->
         </nav>
       </header>
       <main class="main">
 
-        <div class="card-body" style="padding-top: 200px ;">
+        <div class="card-body d-flex flex-column justify-content-center" style="padding-top: 200px ;">
           <h1 style=font-size:70px; class="card-title text-justify-center ">Unlimited movies, TV <br>&nbsp &nbsp shows
             and more.</h1>
           <h2 style=font-size:30px; class="card-subtitle mb-2">Watch anywhere. Cancel anytime.</h2>
@@ -136,18 +140,20 @@
 
   <!-- fifth section  -->
   <div class="fifth">
+    <div class="faq-section">
     <div class="head">
     <h1>Frequently Asked Questions</h1>
   </div>
-    <div class="container text-light">
+    <div class="container">
       <div class="accordion" id="accordionExample">
         <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn  btn-block text-left text-light " type="button" data-toggle="collapse"
+          <div class="faq-wraper">
+            <button class="faq-btn" type="button" data-toggle="collapse"
               data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               What is netflix?
             </button>
-          </h2>
+            <i class="fas fa-plus text-white"></i>
+          </div>
         </div>
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
           <div class="card-body">
@@ -165,7 +171,7 @@
     <div class="container mb-0">
       <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
-          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+          <button class="btn btn-link btn-block text-left p-3 collapsed" type="button" data-toggle="collapse"
             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             How much does Netflix cost?
           </button>
@@ -259,15 +265,14 @@
         
       </div>
     </div>
+  </div>
 
       
  
        <div class="container">
         <div class="list">
-          <h2>
-            <button type="button" class="btn btn-lg btn-block text-light text-left">What is Netflix?
-              <i class="fas fa-plus text-right"></i>
-            </button>
+          <div class="faq_button"><span>What is Netflix?</span></div>
+           
           </h2>
        </div>
        </div>    
