@@ -14,12 +14,9 @@ body{
     width: 110px;
     font-size: 15px;
     background-color:rgba(0, 0, 0, 0.006);
+    border: 1px solid #222;
 }
-/* .top{
-    width: 80%;
-    margin: auto;
-    padding-top: -20px; */
-/* } */
+
 .button{
     height:40px;
     border: none;
@@ -31,9 +28,16 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.logo img{
+        width: 200px;
+}
 .card{
     display:flex;
     justify-content: center;
+}
+.card-head{
+    padding-top:250px;
+    margin-bottom: 0px;
 }
 .card-header{
     color: #fff;
@@ -41,6 +45,7 @@ body{
 .title
 {
     text-align: center;
+    font-size:70px;
     color: white;
 }
 .card-body{
@@ -50,6 +55,7 @@ body{
 .card-subtitle
 {
     text-align: center;
+    font-size:30px;
     color: white;
 }
 .card-text{
@@ -74,41 +80,16 @@ body{
   opacity:0.9; 
 }
 
-/* .imag{
-   
-    background-image: url(1.jpg);
-    background-size: 100% 100%;
-    background-color: #cccccc; 
-    height: 80vh; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-} */
-/* @media screen and(max-width:900px) {
-    .imag{
-    height: 100vh;
-    padding-top: 50px;
-    }
-} */
-/* @media screen and(max-width:540px) {
-    .imag{
-    height: 120vh;
-    padding-top: 50px;
-    }
-}
-@media screen and(max-width:320px) {
-    .imag{
-    height: 140vh;
-    padding-top: 50px;
-    }
-} */
+
 .button{
-    background-color:red;
+ background-color:red;
   border: none;
   border-radius: 5px;
   color: white;
+  font-size:20px;
   padding: 5px 10px;
   cursor: pointer;
+  text-align: center;
 
 }
 .tv{
@@ -122,6 +103,12 @@ body{
     /* border-bottom: 7PX solid #222; */
 }
 
+.content{
+    font-size: 50px;
+}
+.content h3{
+    font-weight: 300;
+}
 .img{
    display:flex;
    padding: 8px 12px;
@@ -150,15 +137,7 @@ body{
 }
 
 
-/* .second{
-    border-bottom: 7PX solid #222;
-}
-.third{
-    border-bottom: 7PX solid #222;
-}
-.fourth{
-    border-bottom: 7PX solid #222;
-} */
+
 .fifth{
     /* padding: 70px 45px; */
     background-color: black;
@@ -167,23 +146,19 @@ body{
     border-bottom:7PX solid #222;
    
 }
-.btn 
- {
-    border: 1px solid #222;
-}
-.head{
+.head h1{
     padding-top:60px;
     padding-bottom: 30px;
     text-align: center;
-    font-size:700px;
     color: white;
+    font-size: 30px;
 }
 .card-header{
    margin: -15px 90px 0 90px;
 }
 
 .faq-section {
-    width:50%;
+    width:60%;
     margin:auto;
     padding-bottom: 45px;
 }
@@ -204,6 +179,19 @@ body{
     font-size: larger;
     cursor: pointer;
 
+}
+.image1 img{
+    width:530px;height:398px;
+}
+.image2 img{
+    width:504px;height:378px;
+    position: relative;
+}
+.image3 img{
+    width:555px;height:416px;
+}
+.image4 img{
+    width:504px;height:378px;
 }
 footer{
     background-color: #000;
@@ -238,7 +226,9 @@ ul{
     gap: 30px;
     justify-content: space-between;
 }
-@media screen and (max-width:480px) {
+
+
+@media screen and (max-width:944px) {
     .flex-box {
     margin-top: 20px;        
       width: 100%;
@@ -250,20 +240,99 @@ ul{
     }
   }
 
-  @media  screen and (max-width:480px){
-    .faq-wraper{
-     width:100%;
+  @media screen and (max-width:891px) {
+    .faq-section{
+        width: 100%;
+    }
+  
+  }
+  @media screen and (max-width:944px){
+    .imag{
+        margin-bottom: -81px;
     }
   }
 
-/* @media screen and (max-width: 340px) {
-    .imag{
-        background-position:center;
+
+  @media  screen and (max-width:776px){
+    .card-head .title{
+        font-size: 40px;
     }
-  } */
-  /* @media only screen and (min-width: 400px) and (max-width: 900px)
-  {
-.card-title  {
-    font-size: 30px;
-}
-  } */
+    .card-subtitle{
+        font-size:30px;
+    }
+    .card-text{
+        font-size:15px;
+    }
+    .imag{
+        height: 60vh;
+    }
+    .card-head{
+        padding-top:150px;
+    }
+
+  }
+
+  @media screen and (max-width:568px) {
+    .nav-flex .logo img{
+        width: 122px;
+    }
+    .card-head .title{
+        margin-top: -30px;
+        font-size: 33px;
+    }
+    .card-subtitle{
+        font-size:25px;
+    }
+    .card-text{
+        font-size:13px;
+    }
+    .card-header{
+        width: 55%;
+    }
+  }
+
+  @media screen and (max-width:441px) {
+      .nav-flex .logo img{
+          width: 99px;
+      }
+      .button{
+          font-size: 15px;
+      }
+      .btn{
+          height: 38px;
+          font-size: 10px;
+          width: 80px;
+      }
+
+  }
+
+  @media screen and (max-width:470px) {
+     .image1 img{    
+         width: 340px;
+         height: 260px;
+     }
+     .image2 img{    
+        width: 340px;
+        height: 260px;
+    }
+    .image2 .img{
+        margin-left: -67px;
+        height: 80px;
+        width: 240px;
+    }
+    .image2 .img .text{
+        font-size: 13px;
+    }
+  
+    .image3 img{    
+        width: 340px;
+        height: 260px;
+    }
+    .image4 img{    
+        width: 340px;
+        height: 260px;
+    }
+
+  }
+ 
+  
